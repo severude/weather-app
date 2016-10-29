@@ -1,5 +1,5 @@
 function JSONP_LocalWeather(input) {
-	var baseUrl = "http://api.worldweatheronline.com/premium/v1/weather.ashx";
+	var baseUrl = "https://api.worldweatheronline.com/premium/v1/weather.ashx";
 	var key = "2fa1f587a4894f2f969215301162410";
 	var url = baseUrl + "?key=" + key + "&q=" + input.query + "&format=" + input.format + "&num_of_days=" + input.num_of_days;
 	jsonP(url, input.callback);

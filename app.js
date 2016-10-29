@@ -102,7 +102,8 @@ function LocalWeatherCallback(localWeather) {
 		container.html(weatherHTML);
 	}
 }
-var $search = "";
+
+var $search = "";  //Global search value that all functions have access to
 
 $('form').submit(function (evt) {
 	GetLocalWeather(evt);

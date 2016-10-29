@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: cadetblue;
+	font-family: sans-serif;
+}
+#form1 {
+	margin: 2em auto;
+	color: whitesmoke;
+	text-align: center;
+}
+input[type=search] {
+  font-size: 1em;
+}
+#searchLabel {
+	margin-bottom: 1em;
+}
+#submit {
+	border-radius: 5%;
+	margin-top: 1em;
+}
+#submit:hover {
+	opacity: .75;
+}
+#container {
+	border-radius: .375em;
+	color: #384047;
+	background-color: whitesmoke;
+	width: 90%;
+	margin: 1em auto;
+/*	padding: 1em;  This is set in generated content so #container doesn't initially show */
+}
+h1, h2, h3, h4 {
+	font-family: 'Varela Round', sans-serif;
+	text-align: center;
+	opacity: .8;
+}
+h3 {
+	text-align: left;
+	color: cadetblue;
+	opacity: 1;
+}
+.greeting {
+	color: whitesmoke;
+}
+.panel {
+	padding-left: 1em;
+}
+#footer {
+	margin: 2em auto;
+	font-size: .8em;
+}
+
+@media (min-width: 550px) {
+	.panel {
+		float: left;
+	}
+	#panel1 {
+		width: 50%;
+	}
+	#panel2 {
+		width: 50%;
+	}
+	#panel3 {
+		width: 50%;
+	}
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 700px) {
+	#panel1 {
+		width: 30%;
+	}
+	#panel2 {
+		width: 40%;
+	}
+	#panel3 {
+		width: 30%;
+	}
+}

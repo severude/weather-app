@@ -32,7 +32,7 @@ input[type=search] {
 	border-radius: .375em;
 	color: #384047;
 	background-color: whitesmoke;
-	width: 90%;
+	width: 95%;
 	margin: 1em auto;
 /*	padding: 1em;  This is set in generated content so #container doesn't initially show */
 }
@@ -61,8 +61,16 @@ h3 {
 	margin: 2em auto;
 	font-size: .8em;
 }
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 @media screen and (min-width: 550px) {
+	#container {
+		width: 90%;
+	}
 	.panel {
 		float: left;
 	}
@@ -70,11 +78,6 @@ h3 {
 	#panel2,
 	#panel3 {
 		width: 50%;
-	}
-	.clearfix::after {
-		content: "";
-		display: table;
-		clear: both;
 	}
 }
 

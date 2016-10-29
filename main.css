@@ -14,6 +14,7 @@ body {
 }
 input[type=search] {
   font-size: 1em;
+	color: #384047;
 }
 #searchLabel {
 	margin-bottom: 1em;

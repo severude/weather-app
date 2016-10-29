@@ -1,3 +1,5 @@
+@import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
+
 * {
 	box-sizing: border-box;
 }
@@ -19,6 +21,7 @@ input[type=search] {
 #submit {
 	border-radius: 5%;
 	margin-top: 1em;
+	background-color: #aaa;
 }
 #submit:hover {
 	opacity: .75;
